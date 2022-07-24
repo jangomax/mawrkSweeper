@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mawrkSweeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <section class="section" id="title">
+    <div class="container">
+      <h1 class="title">
+        mawrkSweeper
+      </h1>
+      <p class="subtitle">
+        Mawrk's version of <strong>Minesweeper</strong>.
+      </p>
+    </div>
+  </section>
+  <section id="startMenu">
+    <div id="startCol" class="column is-one-third is-offset-1">
+    <form class="box" id="menuForm">
+      <div class="field">
+        <label class="label">Height</label>
+        <div class="control">
+          <input class="input" id="height" type="number" placeholder="10" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Width</label>
+        <div class="control">
+          <input class="input" id="width" type="number" placeholder="10" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Mines</label>
+        <div class="control">
+          <input class="input" id="mines" type="number" placeholder="25" required>
+        </div>
+      </div>
+
+    <button onclick="startGame();" class="button is-primary is-large" type="button">Play</button>
+    </form>
+    </div>
+  </section>
+  <section class="section" id="gameBoard">
+  </section>
+  </body>
+  <script src = "main.js"></script>
+</html>
