@@ -1,0 +1,16 @@
+.column {
+  max-width: 16px;
+  max-height: 16px;
+  aspect-ratio: 1;
+}
+
+#startCol {
+  outline: 1px none !important;
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.image {
+  align: center;
+  display:block;
+}
